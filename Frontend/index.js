@@ -8,6 +8,7 @@ function createListing(listing){
     let blankLi = document.createElement('li')
     blankLi.class = 'list-group-item'
     blankLi.innerText = listing.name
+    getMain(1)
     blankLi.addEventListener( "click", () => {
         getMain(listing.id) 
     })
